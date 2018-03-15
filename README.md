@@ -12,21 +12,23 @@ Inspired from Andrej Karpathy's [char-rnn](https://github.com/karpathy/char-rnn)
 ## Requirements
 - [Tensorflow 1.0](http://www.tensorflow.org)
 
-##Setup:
-####In a terminal window:
+## Setup:
+
+### In a terminal window:
 	
 - If you don’t have pip, then install pip first:
-		“sudo apt-get install python3-pip”
+		sudo apt-get install python3-pip
 
 - If you don’t have virtualenv, then:
 		pip install virtualenv
 
-- If you haven’t set up your virtual environment yet:
-		Set up virtualenv (venv) within the char-rnn directory
-			cd to the directory
-			virtualenv venv 
+- If you haven’t set up your virtual environment yet
+ - Set up virtualenv (venv) within the char-rnn directory:
+  - cd to the directory
+  - virtualenv venv 
 
-####Every time:
+### Every time:
+
 In your directory,
 - Activate virtualenv with:
 	source venv/bin/activate
