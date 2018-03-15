@@ -12,6 +12,53 @@ Inspired from Andrej Karpathy's [char-rnn](https://github.com/karpathy/char-rnn)
 ## Requirements
 - [Tensorflow 1.0](http://www.tensorflow.org)
 
+##Setup:
+####In a terminal window:
+	
+- If you don’t have pip, then install pip first:
+		“sudo apt-get install python3-pip”
+
+- If you don’t have virtualenv, then:
+		pip install virtualenv
+
+- If you haven’t set up your virtual environment yet:
+		Set up virtualenv (venv) within the char-rnn directory
+			cd to the directory
+			virtualenv venv 
+
+####Every time:
+In your directory,
+- Activate virtualenv with:
+	source venv/bin/activate
+
+- Run with:
+	python train.py
+
+- To train on new text:
+	python train.py --data_dir=./data/name-of-new-folder
+
+- To view output graphs and logs on “TensorBoard”:
+- - In separate terminal window:
+	cd to directory
+ 	tensorboard --logdir=./logs/
+	Open a browser to http://localhost:6006 or the correct IP/Port 			specified.
+
+- To generate new text:
+	In separate terminal window:
+		cd to directory
+			python sample.py 
+
+## Best model:
+- rnn-size: 128
+- learning_rate: 0.008
+- dropout: 0.5
+- seq = 50
+	
+
+- Next: check # of parameters vs. data size, then tune rnn_size and dropout rate accordingly 
+
+===
+
 ## Basic Usage
 To train with default parameters on the tinyshakespeare corpus, run `python train.py`. To access all the parameters use `python train.py --help`.
 
