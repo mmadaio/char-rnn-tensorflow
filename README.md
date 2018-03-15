@@ -23,7 +23,7 @@ Inspired from Andrej Karpathy's [char-rnn](https://github.com/karpathy/char-rnn)
 		pip install virtualenv
 
 - If you haven’t set up your virtual environment yet
- - Set up virtualenv (venv) within the char-rnn directory:
+ —- Set up virtualenv (venv) within the char-rnn directory:
   - cd to the directory
   - virtualenv venv 
 
@@ -40,7 +40,7 @@ In your directory,
 	python train.py --data_dir=./data/name-of-new-folder
 
 - To view output graphs and logs on “TensorBoard”:
-- - In separate terminal window:
+  - In separate terminal window:
 	cd to directory
  	tensorboard --logdir=./logs/
 	Open a browser to http://localhost:6006 or the correct IP/Port 			specified.
