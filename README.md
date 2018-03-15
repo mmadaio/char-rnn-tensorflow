@@ -49,16 +49,17 @@ In your directory,
     - cd to directory
     - python sample.py 
 
-## Best model:
+## Current best model:
 - rnn-size: 128
 - learning_rate: 0.008
 - dropout: 0.5
 - seq = 50
 	
 
-### Next: check # of parameters vs. data size, then tune rnn_size and dropout rate accordingly 
-
-===
+### Next:
+- Check # of parameters vs. data size
+- Tune rnn_size and dropout rate accordingly 
+- Think about acoustic / rhythmic feature engineering
 
 ## Basic Usage
 To train with default parameters on the tinyshakespeare corpus, run `python train.py`. To access all the parameters use `python train.py --help`.
