@@ -17,13 +17,12 @@ Inspired from Andrej Karpathy's [char-rnn](https://github.com/karpathy/char-rnn)
 ### In a terminal window:
 	
 - If you don’t have pip, then install pip first:
-		sudo apt-get install python3-pip
+  - sudo apt-get install python3-pip
 
 - If you don’t have virtualenv, then:
-		pip install virtualenv
+  - pip install virtualenv
 
-- If you haven’t set up your virtual environment yet
- —- Set up virtualenv (venv) within the char-rnn directory:
+- If you haven’t set up your virtual environment yet, set up virtualenv (venv) within the char-rnn directory:
   - cd to the directory
   - virtualenv venv 
 
@@ -31,24 +30,24 @@ Inspired from Andrej Karpathy's [char-rnn](https://github.com/karpathy/char-rnn)
 
 In your directory,
 - Activate virtualenv with:
-	source venv/bin/activate
+  - source venv/bin/activate
 
 - Run with:
-	python train.py
+  - python train.py
 
 - To train on new text:
-	python train.py --data_dir=./data/name-of-new-folder
+  - python train.py --data_dir=./data/name-of-new-folder
 
 - To view output graphs and logs on “TensorBoard”:
   - In separate terminal window:
-	cd to directory
- 	tensorboard --logdir=./logs/
-	Open a browser to http://localhost:6006 or the correct IP/Port 			specified.
+    - cd to directory
+    - tensorboard --logdir=./logs/
+    - Open a browser to http://localhost:6006 or the correct IP/Port 			specified.
 
 - To generate new text:
-	In separate terminal window:
-		cd to directory
-			python sample.py 
+  - In separate terminal window:
+    - cd to directory
+    - python sample.py 
 
 ## Best model:
 - rnn-size: 128
@@ -57,7 +56,7 @@ In your directory,
 - seq = 50
 	
 
-- Next: check # of parameters vs. data size, then tune rnn_size and dropout rate accordingly 
+### Next: check # of parameters vs. data size, then tune rnn_size and dropout rate accordingly 
 
 ===
 
